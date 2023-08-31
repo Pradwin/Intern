@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div a[title="hey"]{
+            color: red;
+        }
+        div a[href="https://example.org"]{
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+        }
+        div[class="pradwin"] a{
+            color: rgb(0, 191, 255);
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <div>
+            <a href="#" title="hey">Home</a>
+            <a href="https://example.org" title="bye">Contact</a>
+        </div>
+        <div class="pradwin">
+            <a href="https://example.org" title="bye">same link diff name</a>
+        </div>
+    </main>
+</body>
+</html>
