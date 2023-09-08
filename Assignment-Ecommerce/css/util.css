@@ -1,0 +1,30 @@
+.flex-all-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn {
+  padding: 2px 7px;
+  color: white;
+  background-color: var(--main-bg-color);
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 900;
+  border-color: aliceblue;
+}
+.my-3 {
+  text-align: center;
+}
+.my-2 {
+  text-align: center;
+}
+.my-1 {
+  margin: 2px 0;
+}
+.text-center {
+  text-align: center;
+}
+.card-item:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
