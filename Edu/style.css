@@ -114,11 +114,12 @@ a {
 }
 .event {
   width: 30%;
-  margin-right: 3%;
+  margin-right: 10px;
+  margin-left: 10px;
   float: left;
   border: 2px solid #0b203e;
   border-radius: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 23px;
 }
 .event div {
   padding: 10px;
@@ -137,9 +138,9 @@ a {
 .testimonial {
   width: 380px;
   float: left;
-  margin-right:3%;
+  margin-right:2%;
   border-radius: 20px;
-  border: 2px solid #0b203e;
+  border: 3px solid #0b203e;
 }
 .testimonial-text {
   background: #f0f3fa;
@@ -213,7 +214,7 @@ width: 10%;
   color: #fff;
 }
 /********** Footer CSS Ends **********/
-@media (max-width: 900px) {
+@media only screen and (max-width: 1200px) {
   .navbar {
     flex-direction: column;
     align-items: flex-start;
@@ -232,11 +233,11 @@ width: 10%;
     width: 8%;
     padding-top: 5px;
   }
-  /* .navbar-links ul {
+  .navbar-links ul {
     width: 100%;
     flex-direction: column;
     height: auto;
-  } */
+  }
 
   .navbar-links li {
     text-align: center;
@@ -250,5 +251,42 @@ width: 10%;
   .navbar-links.active {
     display: flex;
     background-color: var(--primary-color);
+  }
+  .container {
+    width: var(--container-width-md);
+  }
+  .test {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .test .testimonial {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (max-width:768px) {
+  .container {
+    width: var(--container-width-sm);
+  }
+  .news {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .event{
+    width: 90%;
+    margin-bottom: 20px;
+  }
+  .footer .container{
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-sect {
+    width: 90%;
+  }
+  .footer-sect h2{
+    border-bottom: 1px solid white;
+    gap: 10px;
   }
 }
