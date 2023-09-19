@@ -77,7 +77,7 @@ function swapTurns() {
 	isPlayer_O_Turn = !isPlayer_O_Turn
 }
 
-//making interactive
+//making interactive by showing X or O on hovering over the cells
 function setBoardHoverClass() {
 	boardElement.classList.remove(PLAYER_X_CLASS)
 	boardElement.classList.remove(PLAYER_O_CLASS)

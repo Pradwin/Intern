@@ -45,6 +45,7 @@ body {
 .cell:nth-child(7), .cell:nth-child(8), .cell:nth-child(9) {
 	border-bottom: none;
 }
+/* Not allowing to hover on already placed cells */
 .cell.x, .cell.circle {
 	cursor: not-allowed;
 }
